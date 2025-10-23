@@ -11,10 +11,10 @@ const authAdmin = async (req, res, next) => {
 
         //console.log(req.headers)
         const { token } = req.headers
-        console.log(token)
+        //console.log(token)
 
         const emailId = jwt.verify(token, process.env.JWT_SECRET)
-        console.log(emailId)
+        //console.log(emailId)
 
         if (emailId === process.env.ADMIN_EMAIL) {
             next()

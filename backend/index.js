@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
 //User Routes 
 app.use('/api/user', userRouter)
 app.use('/api/category', categoryRouter)
+app.use('/api/product')
 
 // DB Connection 
 
